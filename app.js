@@ -7,9 +7,9 @@ var
 var lk = {
 	check : async () =>{
 		let respons = await curl(`https://market.csgo.com/api/v2/get-money?key=${config.market_csg.token}`);
-		money = Number(respons.money)
 		if (Number(respons.money)<80) telegram.send_msg(`⛔️ Заканчивается Баланс: ${respons.money} Пополнить: https://market.csgo.com/checkin/`);
 		if (Number(respons.money)>money) telegram.send_msg(`✅ Пополнение баланса: ${respons.money}`);
+		money = Math.ceil(Number(respons.money))
 	},
 	getRandomInt : (min,max) => {
 		var timer = Math.floor(Math.random() * (max - min)) + min;
