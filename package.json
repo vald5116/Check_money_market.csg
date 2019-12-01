@@ -1,0 +1,24 @@
+{
+  "name": "check_money_market.csg",
+  "version": "1.0.0",
+  "description": "Проверяем свой баланс на сайте market.csg а также оповещаем в Telegram если он меньше положеного!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vald5116/Check_money_market.csg.git"
+  },
+  "author": "vald5116",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vald5116/Check_money_market.csg/issues"
+  },
+  "homepage": "https://github.com/vald5116/Check_money_market.csg#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "tiny_request": "^1.0.13"
+  }
+}
